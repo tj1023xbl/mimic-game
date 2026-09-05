@@ -1,7 +1,11 @@
 using UnityEngine;
 
-public class DoorButton : MonoBehaviour
+public class DoorButton : Interactable
 {
+    [SerializeField]
+    private GameObject door;
+    private bool doorOpen;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +16,13 @@ public class DoorButton : MonoBehaviour
     void Update()
     {
         
+    }
+
+    protected override void Interact() 
+    {
+        doorOpen = !doorOpen;
+        door.GetComponent<Animator>().SetBool("isOpen", doorOpen);
+        Debug.Log($"Interacted with {gameObject.name}: {doorOpen}");
+        base.Interact();
     }
 }

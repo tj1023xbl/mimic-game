@@ -5,7 +5,7 @@ public class InputManager : MonoBehaviour
 {
 
     private PlayerInput playerInput;
-    private PlayerInput.OnFootActions onFoot;
+    public PlayerInput.OnFootActions onFoot;
 
     private PlayerMotion motion;
     private PlayerLook look;

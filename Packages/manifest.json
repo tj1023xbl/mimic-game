@@ -11,6 +11,7 @@
     "com.unity.timeline": "1.8.13",
     "com.unity.ugui": "2.5.0",
     "com.unity.visualscripting": "1.9.12",
+    "dev.purrnet.purrnet": "https://github.com/PurrNet/PurrNet.git?path=/Assets/PurrNet#release",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.adaptiveperformance": "1.0.0",
     "com.unity.modules.ai": "1.0.0",

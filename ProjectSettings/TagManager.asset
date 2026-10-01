@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Walls
+  - walls
+  - PlayerUIText
   layers:
   - Default
   - TransparentFX

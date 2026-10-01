@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66869b09091574e4c972f42f5ae2268e, type: 3}
+  m_Name: NetworkPrefabs
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkPrefabs
+  autoGenerate: 1
+  networkOnly: 1
+  poolByDefault: 0
+  folder: {fileID: 102900000, guid: 040e77afc37b3c14d8b1b85db6e53717, type: 3}
+  searchAllIfNoFolder: 1
+  linkedNetworkPrefabs: []
+  prefabs:
+  - guid: 1dcedfbb33efd60489f109a1da9a1af1
+    prefab: {fileID: 4987500628712523604, guid: 1dcedfbb33efd60489f109a1da9a1af1, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 4048fb6abdfb5ba4c8fcd3d50ec1ae87
+    prefab: {fileID: 8563410292147042189, guid: 4048fb6abdfb5ba4c8fcd3d50ec1ae87, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: e750042867e877746afb2b56891be624
+    prefab: {fileID: 3908958338758077186, guid: e750042867e877746afb2b56891be624, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 3b1f01bd9f6527646b72eaa88d457ffa
+    prefab: {fileID: 6881868791358089053, guid: 3b1f01bd9f6527646b72eaa88d457ffa, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 5620c36c01c2b7242b1d24c0fb86d9ed
+    prefab: {fileID: 8047769154380073895, guid: 5620c36c01c2b7242b1d24c0fb86d9ed, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 7bf71d1cf78e4824aaacb98c8ca1a9e9
+    prefab: {fileID: 8800797702147686817, guid: 7bf71d1cf78e4824aaacb98c8ca1a9e9, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: d97e5273c9dea2a449a5b0bb047786cd
+    prefab: {fileID: 1760571255737310668, guid: d97e5273c9dea2a449a5b0bb047786cd, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 057696d578539394ebcb74adefaba72b
+    prefab: {fileID: 1224805628871031836, guid: 057696d578539394ebcb74adefaba72b, type: 3}
+    pooled: 0
+    warmupCount: 5

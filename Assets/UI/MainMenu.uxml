@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/main-menu.uss?fileID=7433441132597879392&amp;guid=8a22200594ada794392cd2254caba4d0&amp;type=3#main-menu"/>
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; align-items: center; align-self: auto;">
+        <ui:VisualElement name="Container" class="menu" style="flex-grow: 1; align-items: auto; min-width: 30%; max-width: none; align-self: auto; align-content: flex-start; max-height: 30%; min-height: initial; height: auto; justify-content: space-evenly; top: 35%; flex-direction: column; flex-wrap: nowrap; flex-shrink: 1; background-color: rgba(0, 0, 0, 0); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgba(0, 0, 0, 0.333); border-right-color: rgba(0, 0, 0, 0.333); border-top-color: rgba(0, 0, 0, 0.333); border-bottom-color: rgba(0, 0, 0, 0.333);">
+            <ui:Button text="Start Game" class="buttons"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

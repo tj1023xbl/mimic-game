@@ -17,7 +17,7 @@ public class PlayerInteract : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cam = GetComponent<PlayerLook>().cam;
+        cam = GetComponent<PlayerLook>()._cam;
         playerUI = GetComponent<PlayerUI>();
         inputManager = GetComponent<InputManager>();
     }
@@ -33,7 +33,7 @@ public class PlayerInteract : MonoBehaviour
 
         if (Physics.Raycast(ray, out hitInfo, interactRange, mask)) 
         {
-            if (hitInfo.collider.GetComponent<Interactable>() is not null) 
+            if (hitInfo.collider.GetComponent<Interactable>() != null) 
             {
                 Interactable interactable = hitInfo.collider.GetComponent<Interactable>();
                 playerUI.UpdateText(interactable.promptMessage);

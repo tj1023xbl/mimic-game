@@ -197,6 +197,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "dev.purrnet.dissonance": {
+      "version": "https://github.com/BobsiUnity/PurrNet-VoiceChat.git?path=/Assets/PurrNet-Dissonance",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "db1d1e988f99921901078648c813f8c60d6a6d30"
+    },
     "dev.purrnet.purrnet": {
       "version": "https://github.com/PurrNet/PurrNet.git?path=/Assets/PurrNet#release",
       "depth": 0,

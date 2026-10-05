@@ -30,6 +30,8 @@ public class PlayerLook : NetworkBehaviour
 
     public void ProcessLook(Vector2 input)
     {
+        if (!isOwner)
+            return;
 
         float mouseX = input.x;
         float mouseY = input.y;

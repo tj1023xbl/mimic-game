@@ -1,3 +1,4 @@
+using PurrNet;
 using UnityEngine;
 
 public class DoorButton : Interactable
@@ -19,7 +20,7 @@ public class DoorButton : Interactable
 
     protected override void Interact() 
     {
-        bool isOpen = door.GetComponent<Animator>().GetBool("isOpen");
+        bool isOpen = door.GetComponent<NetworkAnimator>().GetBool("isOpen");
         isOpen = !isOpen;
         door.GetComponent<Animator>().SetBool("isOpen", isOpen);
         Debug.Log($"Interacted with {gameObject.name}: {isOpen}");

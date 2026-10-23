@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 309277371}
   - component: {fileID: 309277370}
   - component: {fileID: 309277369}
+  - component: {fileID: 309277375}
   m_Layer: 0
   m_Name: DissonanceHandler
   m_TagString: Untagged
@@ -404,11 +405,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskedMicCapture
   transcriber: {fileID: 61294730}
+  tts: {fileID: 309277375}
   maskingEnabled: 1
   speechThreshold: 0.015
   hangoverSeconds: 0.6
   minSpeechSeconds: 0.3
   maxSegmentSeconds: 15
+--- !u!114 &309277375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309277368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b53184fb81bcff4e8295608cf4d7637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TtsController
+  _audioSource: {fileID: 0}
 --- !u!1 &343234215
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +754,7 @@ GameObject:
   - component: {fileID: 538619264}
   - component: {fileID: 538619263}
   - component: {fileID: 538619262}
+  - component: {fileID: 538619267}
   - component: {fileID: 538619266}
   m_Layer: 6
   m_Name: Button
@@ -856,6 +872,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorButton
   promptMessage: Use Keypad
   door: {fileID: 544831677}
+--- !u!114 &538619267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538619261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5681fe548eb84304ea28a286062791f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkIdentity
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
 --- !u!1 &544831677
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +973,7 @@ MonoBehaviour:
   _directChildren: []
   _animator: {fileID: 544831678}
   _ownerAuth: 0
-  _autoSyncParameters: 1
+  _autoSyncParameters: 0
   _dontSyncParameters: []
 --- !u!1 &692076632
 GameObject:
@@ -1437,7 +1474,7 @@ MonoBehaviour:
   translateToEnglish: 0
   strategy: 0
   noContext: 1
-  singleSegment: 0
+  singleSegment: 1
   enableTokens: 0
   initialPrompt: 
   stepSec: 3
@@ -3396,6 +3433,7 @@ GameObject:
   - component: {fileID: 2115257216}
   - component: {fileID: 2115257215}
   - component: {fileID: 2115257214}
+  - component: {fileID: 2115257218}
   - component: {fileID: 2115257213}
   m_Layer: 6
   m_Name: Button (1)
@@ -3513,6 +3551,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!114 &2115257218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115257212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5681fe548eb84304ea28a286062791f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkIdentity
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
 --- !u!1001 &543767830308749543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3619,6 +3678,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 309277373}
+  - {fileID: 868407564}
+  - {fileID: 61294731}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 2000109072}
@@ -3637,5 +3698,3 @@ SceneRoots:
   - {fileID: 1612784063}
   - {fileID: 89683634}
   - {fileID: 1793417976}
-  - {fileID: 868407564}
-  - {fileID: 61294731}

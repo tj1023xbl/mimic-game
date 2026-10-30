@@ -30,6 +30,7 @@ public class MaskedMicCapture : MonoBehaviour, IMicrophoneCapture
 
     /// <summary>Component that wraps WhisperManager and turns audio into text.</summary>
     [SerializeField] Transcriber transcriber;
+    [SerializeField] TtsController tts;
 
     [Tooltip("On: STT -> TTS masking. Off: send the real mic audio.")]
     [SerializeField] bool maskingEnabled = true;
@@ -456,18 +457,10 @@ public class MaskedMicCapture : MonoBehaviour, IMicrophoneCapture
     /// PLACEHOLDER: replace with a real TTS. Emits one short beep per word so you can test the
     /// wiring. Must return mono samples at TtsSampleRate.
     /// </summary>
-    Task<float[]> SynthesizeAsync(string text)
+    async Task<float[]> SynthesizeAsync(string text)
     {
-        int wordCount = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
-        int samplesPerWord = TtsSampleRate / 4;                          // 250 ms per word
-        var audio = new float[wordCount * samplesPerWord];
-        for (int i = 0; i < audio.Length; i++)
-        {
-            // Beep for the first 200 ms of each word's slot, then 50 ms of silence.
-            bool inBeep = (i % samplesPerWord) < TtsSampleRate / 5;
-            audio[i] = inBeep ? 0.2f * Mathf.Sin(2f * Mathf.PI * 440f * i / TtsSampleRate) : 0f;
-        }
-        return Task.FromResult(audio);
+        float[] ttsAudio = await tts.GenerateTtsAsync(text);
+        return ttsAudio;
     }
 
     // =====================================================================

@@ -829,7 +829,11 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 1
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: SHERPA_ONNX
+    Server: SHERPA_ONNX
+    Standalone: SHERPA_ONNX
+    iPhone: SHERPA_ONNX
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

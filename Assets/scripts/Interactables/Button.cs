@@ -1,9 +1,10 @@
+using PurrNet;
 using UnityEngine;
 
 public class DoorButton : Interactable
 {
     [SerializeField]
-    private GameObject door;
+    private NetworkAnimator door;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,9 +20,9 @@ public class DoorButton : Interactable
 
     protected override void Interact() 
     {
-        bool isOpen = door.GetComponent<Animator>().GetBool("isOpen");
+        bool isOpen = door.GetBool("isOpen");
         isOpen = !isOpen;
-        door.GetComponent<Animator>().SetBool("isOpen", isOpen);
+        door.SetBool("isOpen", isOpen);
         Debug.Log($"Interacted with {gameObject.name}: {isOpen}");
         base.Interact();
     }

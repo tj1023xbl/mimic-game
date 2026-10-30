@@ -1,5 +1,22 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a77a1b4a89824fb6df293099de3060daf2a432c1"
+    },
+    "com.ponyudev.sherpa-onnx": {
+      "version": "https://github.com/Ponyu-dev/Unity-Sherpa-ONNX.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.sharp-zip-lib": "1.4.1",
+        "com.cysharp.unitask": "2.5.10"
+      },
+      "hash": "ebfccf15158d430f8ec15a17344f48ce632adc75"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.14",
       "depth": 0,
@@ -142,6 +159,13 @@
         "com.unity.render-pipelines.core": "17.5.0",
         "com.unity.searcher": "4.9.3"
       }
+    },
+    "com.unity.sharp-zip-lib": {
+      "version": "1.4.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
       "version": "1.7.0",

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: PonyuDev.SherpaOnnx.Editor::PonyuDev.SherpaOnnx.Editor.TtsInstall.Settings.TtsProjectSettings
   ttsEnabled: 1
   data:
-    activeProfileIndex: 0
+    activeProfileIndex: 2
     keepOnlyActiveProfile: 0
     buildOnlyActiveProfile: 0
     cache:
@@ -160,4 +160,71 @@ MonoBehaviour:
       supertonicTtsJson: 
       supertonicUnicodeIndexer: 
       supertonicVoiceStyle: 
+      remoteBaseUrl: 
+    - profileName: sherpa-onnx-supertonic-3-tts-int8-2026-05-11
+      modelType: 6
+      modelSource: 0
+      sourceUrl: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-supertonic-3-tts-int8-2026-05-11.tar.bz2
+      numThreads: 1
+      provider: cpu
+      allowInt8: 1
+      speakerId: 1
+      speed: 1
+      ruleFsts: 
+      ruleFars: 
+      maxNumSentences: 1
+      silenceScale: 0.2
+      vitsModel: 
+      vitsLexicon: 
+      vitsTokens: 
+      vitsDataDir: 
+      vitsDictDir: 
+      vitsNoiseScale: 0.667
+      vitsNoiseScaleW: 0.8
+      vitsLengthScale: 1
+      matchaAcousticModel: 
+      matchaVocoder: 
+      matchaLexicon: 
+      matchaTokens: 
+      matchaDataDir: 
+      matchaDictDir: 
+      matchaNoiseScale: 0.667
+      matchaLengthScale: 1
+      kokoroModel: 
+      kokoroVoices: 
+      kokoroTokens: 
+      kokoroDataDir: 
+      kokoroDictDir: 
+      kokoroLexicon: 
+      kokoroLang: 
+      kokoroLengthScale: 1
+      kittenModel: 
+      kittenVoices: 
+      kittenTokens: 
+      kittenDataDir: 
+      kittenLengthScale: 1
+      zipVoiceTokens: 
+      zipVoiceEncoder: 
+      zipVoiceDecoder: 
+      zipVoiceVocoder: 
+      zipVoiceDataDir: 
+      zipVoiceLexicon: 
+      zipVoiceFeatScale: 0.1
+      zipVoiceTshift: 0.5
+      zipVoiceTargetRms: 0.1
+      zipVoiceGuidanceScale: 1
+      pocketLmFlow: 
+      pocketLmMain: 
+      pocketEncoder: 
+      pocketDecoder: 
+      pocketTextConditioner: 
+      pocketVocabJson: 
+      pocketTokenScoresJson: 
+      supertonicDurationPredictor: duration_predictor.int8.onnx
+      supertonicTextEncoder: text_encoder.int8.onnx
+      supertonicVectorEstimator: vector_estimator.int8.onnx
+      supertonicVocoder: vocoder.int8.onnx
+      supertonicTtsJson: tts.json
+      supertonicUnicodeIndexer: unicode_indexer.bin
+      supertonicVoiceStyle: voice.bin
       remoteBaseUrl: 

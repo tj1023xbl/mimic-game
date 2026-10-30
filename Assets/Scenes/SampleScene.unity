@@ -870,8 +870,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb1e67b3b6e0de45b134f91352acf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorButton
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
   promptMessage: Use Keypad
-  door: {fileID: 544831677}
+  door: {fileID: 544831680}
 --- !u!114 &538619267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,7 +981,7 @@ MonoBehaviour:
   _invertedPathToNearestParent: 
   _directChildren: []
   _animator: {fileID: 544831678}
-  _ownerAuth: 0
+  _ownerAuth: 1
   _autoSyncParameters: 0
   _dontSyncParameters: []
 --- !u!1 &692076632
@@ -2364,6 +2373,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613577a57d63bed498a99dc815bc0baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniGame1
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
   promptMessage: Perform Task
 --- !u!65 &1612784060
 BoxCollider:
@@ -3454,8 +3472,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb1e67b3b6e0de45b134f91352acf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorButton
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
   promptMessage: Use Keypad
-  door: {fileID: 544831677}
+  door: {fileID: 544831680}
 --- !u!136 &2115257214
 CapsuleCollider:
   m_ObjectHideFlags: 0
